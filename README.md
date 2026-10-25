@@ -64,7 +64,7 @@
 
 <div align="center">
   <table>
-    <tr><td align="right"><b>SQL</b></td><td align="left">🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜&nbsp; <b>70%</b></td></tr>
+    <tr><td align="right"><b>SQL</b></td><td align="left">🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜&nbsp; <b>70%</b></td></tr>
     <tr><td align="right"><b>Python</b></td><td align="left">🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜&nbsp; <b>65%</b></td></tr>
     <tr><td align="right"><b>Spark</b></td><td align="left">🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜&nbsp; <b>30%</b></td></tr>
     <tr><td align="right"><b>Airflow</b></td><td align="left">🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜&nbsp; <b>20%</b></td></tr>
