@@ -11,7 +11,7 @@
 
 ---
 
-## 👨‍💻 About me
+## About me
 
 <div align="center">
   <img src="./assets/terminal.svg" width="100%" alt="whoami: Data Engineering student in Ho Chi Minh City. Stack: Python, SQL, Spark, Airflow, Kafka, Docker, AWS/GCP. Current focus: building ETL pipelines, learning Spark, open to collaborate."/>
@@ -19,7 +19,7 @@
 
 ---
 
-## 🧰 Tech stack
+## Tech stack
 
 <div align="center">
   <picture>
@@ -36,17 +36,19 @@
 
 ---
 
-## 🚀 Projects
+## Projects
 
+<!-- cards are generated daily by .github/workflows/snake.yml into the output branch -->
 <div align="center">
-  <a href="https://github.com/quanw12/ember"><img src="https://github-readme-stats.vercel.app/api/pin/?username=quanw12&repo=ember&hide_border=true&theme=transparent&title_color=2f80ed&icon_color=2f80ed" alt="ember"/></a>
-  <a href="https://github.com/quanw12/futoshiki"><img src="https://github-readme-stats.vercel.app/api/pin/?username=quanw12&repo=futoshiki&hide_border=true&theme=transparent&title_color=2f80ed&icon_color=2f80ed" alt="futoshiki"/></a>
-  <a href="https://github.com/quanw12/fitcv"><img src="https://github-readme-stats.vercel.app/api/pin/?username=quanw12&repo=fitcv&hide_border=true&theme=transparent&title_color=2f80ed&icon_color=2f80ed" alt="fitcv"/></a>
+  <a href="https://github.com/quanw12/olistdatalab"><img src="https://raw.githubusercontent.com/quanw12/quanw12/output/pin-olistdatalab.svg" width="49%" alt="olistdatalab"/></a>
+  <a href="https://github.com/quanw12/agentsense"><img src="https://raw.githubusercontent.com/quanw12/quanw12/output/pin-agentsense.svg" width="49%" alt="agentsense"/></a>
+  <a href="https://github.com/quanw12/ember"><img src="https://raw.githubusercontent.com/quanw12/quanw12/output/pin-ember.svg" width="49%" alt="ember"/></a>
+  <a href="https://github.com/quanw12/futoshiki"><img src="https://raw.githubusercontent.com/quanw12/quanw12/output/pin-futoshiki.svg" width="49%" alt="futoshiki"/></a>
 </div>
 
 ---
 
-## 🗺️ Data Engineering roadmap
+## Data Engineering roadmap
 
 <div align="center">
   <img src="./assets/roadmap.svg" width="100%" alt="Roadmap: SQL 70% done, Data Modeling 60% done, Python 65% learning, Spark 30% next, Airflow 20%, AWS/GCP 20%"/>
@@ -56,19 +58,10 @@
 
 ---
 
-## 📊 GitHub stats
+## Activity
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=quanw12&show_icons=true&hide_border=true&bg_color=00000000&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&include_all_commits=true&count_private=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=quanw12&show_icons=true&hide_border=true&bg_color=00000000&title_color=2f80ed&icon_color=2f80ed&text_color=434d58&include_all_commits=true&count_private=true" />
-    <img src="https://github-readme-stats.vercel.app/api?username=quanw12&show_icons=true&hide_border=true&bg_color=00000000&title_color=2f80ed&icon_color=2f80ed&text_color=434d58&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=quanw12&layout=compact&hide_border=true&bg_color=00000000&title_color=58a6ff&text_color=ffffff" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=quanw12&layout=compact&hide_border=true&bg_color=00000000&title_color=2f80ed&text_color=434d58" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=quanw12&layout=compact&hide_border=true&bg_color=00000000&title_color=2f80ed&text_color=434d58" alt="Top languages" height="165" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/quanw12/quanw12/output/stats.svg" width="100%" alt="GitHub stats and top languages"/>
 </div>
 
 <div align="center">

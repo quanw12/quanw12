@@ -1,8 +1,10 @@
-name: generate snake
+name: generate profile assets
 
 on:
   schedule:
     - cron: "0 0 * * *"
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -11,6 +13,8 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
+
       - name: Generate snake SVG
         uses: Platane/snk/svg-only@v3
         with:
@@ -18,6 +22,12 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Generate stats and project cards
+        run: python .github/scripts/profile_cards.py dist
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v5
