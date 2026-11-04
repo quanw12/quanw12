@@ -15,9 +15,9 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,mysql,postgres,docker,aws,gcp,linux,bash,git,github&perline=10&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,mysql,postgres,docker,aws,gcp,linux,bash,git,github&perline=10&theme=light" />
-    <img src="https://skillicons.dev/icons?i=py,mysql,postgres,docker,aws,gcp,linux,bash,git,github&perline=10" alt="stack" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cmysql%2Cpostgres%2Cdocker%2Caws%2Cgcp%2Clinux%2Cbash%2Cgit%2Cgithub&perline=10&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cmysql%2Cpostgres%2Cdocker%2Caws%2Cgcp%2Clinux%2Cbash%2Cgit%2Cgithub&perline=10&theme=light" />
+    <img src="https://skillicons.dev/icons?i=py%2Cmysql%2Cpostgres%2Cdocker%2Caws%2Cgcp%2Clinux%2Cbash%2Cgit%2Cgithub&perline=10" alt="stack" />
   </picture>
   <br/><br/>
   <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Spark"/>
