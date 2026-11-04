@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="420" viewBox="0 0 1000 420">
+  <defs>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5794f2" stop-opacity=".35"/><stop offset="1" stop-color="#5794f2" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="logclip"><rect x="620" y="200" width="364" height="200"/></clipPath>
+    <clipPath id="reveal"><rect x="50" y="190" width="0" height="200">
+      <animate attributeName="width" from="0" to="545" dur="2.2s" begin=".3s" fill="freeze"/></rect></clipPath>
+    <style>
+      text { font-family: Inter, 'Segoe UI', Ubuntu, Arial, sans-serif; }
+      .mono, .mono text { font-family: 'Fira Code', Consolas, monospace; }
+      .panel { fill: #181b1f; stroke: #2c3235; }
+      .ptitle { fill: #ccccdc; font-size: 13px; font-weight: 600; }
+      .lbl { fill: #8e8e9e; font-size: 11px; letter-spacing: 1.2px; font-weight: 600; }
+      .sub { fill: #8e8e9e; font-size: 12px; }
+      .grid { stroke: #2c3235; }
+      .axis { fill: #8e8e9e; font-size: 11px; }
+      .line { fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+      .live { animation: live 1.4s ease-in-out infinite; }
+      @keyframes live { 50% { opacity: .3 } }
+      .in { opacity: 0; animation: in .6s ease-out forwards; }
+      @keyframes in { to { opacity: 1 } }
+      .i { fill: #5794f2; } .w { fill: #fade2a; } .ok { fill: #73bf69; } .t { fill: #8e8e9e; } .m { fill: #ccccdc; }
+    </style>
+    <g id="logs" class="mono" font-size="12.5" xml:space="preserve" style="white-space:pre">
+      <text x="636" y="216"><tspan class="t">09:00 </tspan><tspan class="i">INFO </tspan><tspan class="m">extract   orders.csv     </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="234"><tspan class="t">09:01 </tspan><tspan class="i">INFO </tspan><tspan class="m">validate  schema ok      </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="252"><tspan class="t">09:02 </tspan><tspan class="i">INFO </tspan><tspan class="m">transform spark.join     </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="270"><tspan class="t">09:03 </tspan><tspan class="w">WARN </tspan><tspan class="m">nulls in customer_id   </tspan><tspan class="w">!</tspan></text>
+      <text x="636" y="288"><tspan class="t">09:04 </tspan><tspan class="i">INFO </tspan><tspan class="m">dedupe    12,408 rows    </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="306"><tspan class="t">09:05 </tspan><tspan class="i">INFO </tspan><tspan class="m">load      postgres       </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="324"><tspan class="t">09:06 </tspan><tspan class="i">INFO </tspan><tspan class="m">dbt run   14 models      </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="342"><tspan class="t">09:07 </tspan><tspan class="i">INFO </tspan><tspan class="m">tests     14/14 passed   </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="360"><tspan class="t">09:08 </tspan><tspan class="i">INFO </tspan><tspan class="m">airflow   dag success    </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="378"><tspan class="t">09:09 </tspan><tspan class="i">INFO </tspan><tspan class="m">learn     spark docs     </tspan><tspan class="w">…</tspan></text>
+      <text x="636" y="396"><tspan class="t">09:10 </tspan><tspan class="i">INFO </tspan><tspan class="m">git push  origin main    </tspan><tspan class="ok">✔</tspan></text>
+      <text x="636" y="414"><tspan class="t">09:11 </tspan><tspan class="i">INFO </tspan><tspan class="m">coffee    refill         </tspan><tspan class="w">☕</tspan></text>
+    </g>
+  </defs>
+
+  <rect width="1000" height="420" rx="14" fill="#111217"/>
+
+  <!-- top bar -->
+  <g transform="translate(16 0)">
+    <rect x="0" y="16" width="18" height="18" rx="3" fill="none" stroke="#ff9830" stroke-width="2"/>
+    <rect x="4" y="24" width="3" height="6" fill="#ff9830"/><rect x="9" y="21" width="3" height="9" fill="#ff9830"/>
+    <text x="28" y="31" fill="#8e8e9e" font-size="14"><tspan fill="#e6edf3" font-weight="700" font-size="17">Nguyễn Kiều Anh Quân</tspan>   /   profile-overview</text>
+  </g>
+  <g transform="translate(984 0)" text-anchor="end">
+    <rect x="-120" y="12" width="120" height="26" rx="4" fill="#181b1f" stroke="#2c3235"/>
+    <text x="-14" y="30" fill="#ccccdc" font-size="12">⏱  Last 24 hours</text>
+    <circle cx="-178" cy="25" r="5" fill="#73bf69" class="live"/>
+    <text x="-134" y="30" fill="#73bf69" font-size="12" font-weight="600">LIVE</text>
+  </g>
+
+  <!-- stat row -->
+  <g class="in">
+    <rect x="16" y="52" width="233" height="96" rx="4" class="panel"/>
+    <text x="32" y="76" class="lbl">ROLE</text>
+    <text x="32" y="112" fill="#5794f2" font-size="24" font-weight="700">Data Engineer</text>
+    <text x="32" y="134" class="sub">in training · student</text>
+  </g>
+  <g class="in" style="animation-delay:.1s">
+    <rect x="261" y="52" width="233" height="96" rx="4" class="panel"/>
+    <text x="277" y="76" class="lbl">LOCATION</text>
+    <text x="277" y="112" fill="#ccccdc" font-size="24" font-weight="700">Hồ Chí Minh</text>
+    <text x="277" y="134" class="sub">Vietnam · UTC+7</text>
+  </g>
+  <g class="in" style="animation-delay:.2s">
+    <rect x="506" y="52" width="233" height="96" rx="4" class="panel"/>
+    <text x="522" y="76" class="lbl">STATUS</text>
+    <circle cx="531" cy="104" r="7" fill="#73bf69" class="live"/>
+    <text x="546" y="112" fill="#73bf69" font-size="24" font-weight="700">Learning</text>
+    <text x="522" y="134" class="sub">Spark · Airflow · Cloud</text>
+  </g>
+  <g class="in" style="animation-delay:.3s">
+    <rect x="751" y="52" width="233" height="96" rx="4" class="panel"/>
+    <text x="767" y="76" class="lbl">OPEN TO</text>
+    <text x="767" y="112" fill="#ff9830" font-size="24" font-weight="700">Collab ✦</text>
+    <text x="767" y="134" class="sub">projects · internships</text>
+  </g>
+
+  <!-- skill growth chart -->
+  <g class="in" style="animation-delay:.4s">
+    <rect x="16" y="160" width="592" height="246" rx="4" class="panel"/>
+    <text x="32" y="184" class="ptitle">Skill growth</text>
+    <g font-size="12" text-anchor="start">
+      <rect x="380" y="175" width="12" height="3" fill="#5794f2"/><text x="398" y="182" class="sub">SQL</text>
+      <rect x="436" y="175" width="12" height="3" fill="#73bf69"/><text x="454" y="182" class="sub">Python</text>
+      <rect x="512" y="175" width="12" height="3" fill="#ff9830"/><text x="530" y="182" class="sub">Spark</text>
+    </g>
+    <g class="grid">
+      <line x1="50" y1="210" x2="590" y2="210"/><line x1="50" y1="250" x2="590" y2="250"/>
+      <line x1="50" y1="290" x2="590" y2="290"/><line x1="50" y1="330" x2="590" y2="330"/>
+      <line x1="50" y1="370" x2="590" y2="370"/>
+    </g>
+    <g class="axis" text-anchor="end">
+      <text x="42" y="214">100</text><text x="42" y="294">50</text><text x="42" y="374">0</text>
+    </g>
+    <g class="axis" text-anchor="middle">
+      <text x="50" y="392">2024</text><text x="320" y="392">2025</text><text x="580" y="392">now</text>
+    </g>
+    <g clip-path="url(#reveal)">
+      <path d="M50,362 L117,346 L185,330 L252,306 L320,290 L387,276 L455,266 L522,258 L590,254 L590,370 L50,370 Z" fill="url(#area)"/>
+      <polyline class="line" stroke="#5794f2" points="50,362 117,346 185,330 252,306 320,290 387,276 455,266 522,258 590,254"/>
+      <polyline class="line" stroke="#73bf69" points="50,368 117,364 185,354 252,342 320,326 387,306 455,292 522,280 590,266"/>
+      <polyline class="line" stroke="#ff9830" points="50,370 117,370 185,369 252,367 320,363 387,355 455,344 522,330 590,322"/>
+    </g>
+    <circle cx="590" cy="322" r="4" fill="#ff9830" class="live"/>
+  </g>
+
+  <!-- logs -->
+  <g class="in" style="animation-delay:.5s">
+    <rect x="620" y="160" width="364" height="246" rx="4" class="panel"/>
+    <text x="636" y="184" class="ptitle">Pipeline logs</text>
+    <text x="968" y="184" text-anchor="end" fill="#73bf69" font-size="11" class="live">● streaming</text>
+    <g clip-path="url(#logclip)">
+      <g>
+        <use href="#logs" xlink:href="#logs"/>
+        <use href="#logs" xlink:href="#logs" y="216"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -216" dur="18s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  </g>
+</svg>

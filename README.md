@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="Nguyễn Kiều Anh Quân — Aspiring Data Engineer. Animated data pipeline: Sources → Extract → Transform → Orchestrate → Warehouse"/>
+  <img src="./assets/dashboard.svg" width="100%" alt="Nguyễn Kiều Anh Quân — Data Engineer in training, Ho Chi Minh City. Status: learning Spark, Airflow, Cloud. Open to collaboration. Skill growth chart for SQL, Python, Spark and a live pipeline log."/>
 </div>
 
 <p align="center">
@@ -8,14 +8,6 @@
   <a href="mailto:nguyenkieuanhquan12@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
   <img src="https://komarev.com/ghpvc/?username=quanw12&label=Profile+views&color=2f80ed&style=for-the-badge" alt="profile views" />
 </p>
-
----
-
-## About me
-
-<div align="center">
-  <img src="./assets/terminal.svg" width="100%" alt="whoami: Data Engineering student in Ho Chi Minh City. Stack: Python, SQL, Spark, Airflow, Kafka, Docker, AWS/GCP. Current focus: building ETL pipelines, learning Spark, open to collaborate."/>
-</div>
 
 ---
 
