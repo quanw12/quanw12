@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#0b2045"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="0.5" stop-color="#a5d6ff"/>
+      <stop offset="1" stop-color="#58a6ff"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#1f6feb" stroke-opacity="0.08"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .sans { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'Fira Code', Consolas, 'Courier New', monospace; }
+      .node rect { fill: #0f2547; stroke: #2f80ed; stroke-width: 1.5; }
+      .node .lbl { fill: #e6edf3; font-size: 15px; font-weight: 600; text-anchor: middle; }
+      .node .sub { fill: #8b949e; font-size: 11px; text-anchor: middle; }
+      .pulse { animation: pulse 3s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { stroke-opacity: .35 } 50% { stroke-opacity: 1 } }
+      .fade { opacity: 0; animation: fade 1s ease-out forwards; }
+      @keyframes fade { to { opacity: 1 } }
+      .blink { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+    </style>
+  </defs>
+
+  <rect width="1000" height="300" rx="16" fill="url(#bg)"/>
+  <rect width="1000" height="300" rx="16" fill="url(#grid)"/>
+
+  <!-- intro -->
+  <text x="50" y="62" class="mono fade" fill="#43d9ad" font-size="16">&gt; hello, world — I'm</text>
+  <text x="50" y="112" class="sans fade" style="animation-delay:.3s" fill="url(#title)" font-size="44" font-weight="700">Nguyễn Kiều Anh Quân</text>
+  <text x="50" y="148" class="mono fade" style="animation-delay:.6s" fill="#c9d1d9" font-size="17">Aspiring Data Engineer · Ho Chi Minh City<tspan class="blink" fill="#58a6ff"> ▍</tspan></text>
+
+  <!-- pipeline track -->
+  <line x1="110" y1="225" x2="890" y2="225" stroke="#2f80ed" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- flowing data packets -->
+  <g filter="url(#glow)">
+    <circle r="5" fill="#58a6ff"><animateMotion path="M110,225 H890" dur="4s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#f9c74f"><animateMotion path="M110,225 H890" dur="4s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#43d9ad"><animateMotion path="M110,225 H890" dur="4s" begin="2s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#ff7b72"><animateMotion path="M110,225 H890" dur="4s" begin="3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- stages -->
+  <g class="sans">
+    <g class="node" transform="translate(110 225)">
+      <rect x="-68" y="-26" width="136" height="52" rx="10" class="pulse"/>
+      <text class="lbl" y="-2">Sources</text><text class="sub" y="15">API · CSV · DB</text>
+    </g>
+    <g class="node" transform="translate(305 225)">
+      <rect x="-68" y="-26" width="136" height="52" rx="10" class="pulse" style="animation-delay:.6s"/>
+      <text class="lbl" y="-2">Extract</text><text class="sub" y="15">Python · Kafka</text>
+    </g>
+    <g class="node" transform="translate(500 225)">
+      <rect x="-68" y="-26" width="136" height="52" rx="10" class="pulse" style="animation-delay:1.2s"/>
+      <text class="lbl" y="-2">Transform</text><text class="sub" y="15">Spark · SQL</text>
+    </g>
+    <g class="node" transform="translate(695 225)">
+      <rect x="-68" y="-26" width="136" height="52" rx="10" class="pulse" style="animation-delay:1.8s"/>
+      <text class="lbl" y="-2">Orchestrate</text><text class="sub" y="15">Airflow · Docker</text>
+    </g>
+    <g class="node" transform="translate(890 225)">
+      <rect x="-68" y="-26" width="136" height="52" rx="10" class="pulse" style="animation-delay:2.4s"/>
+      <text class="lbl" y="-2">Warehouse</text><text class="sub" y="15">Postgres · Cloud</text>
+    </g>
+  </g>
+</svg>
