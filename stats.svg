@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="205" viewBox="0 0 1000 205">
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .fade { opacity: 0; animation: fade .6s ease-out forwards; }
+    @keyframes fade { to { opacity: 1 } }
+    
+  </style>
+  <rect x="0.5" y="0.5" width="999" height="204" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <text x="40" y="46" fill="#e6edf3" font-size="20" font-weight="700">GitHub stats</text>
+  <text x="520" y="46" fill="#e6edf3" font-size="20" font-weight="700">Top languages</text>
+  <line x1="480" y1="30" x2="480" y2="180" stroke="#30363d"/>
+  <g class="fade" style="animation-delay:0.00s">
+    <text x="40" y="88" fill="#58a6ff" font-size="30" font-weight="700" font-family="'Fira Code', Consolas, monospace">462</text>
+    <text x="40" y="112" fill="#8b949e" font-size="14">Total commits</text>
+  </g>
+  <g class="fade" style="animation-delay:0.15s">
+    <text x="250" y="88" fill="#58a6ff" font-size="30" font-weight="700" font-family="'Fira Code', Consolas, monospace">7</text>
+    <text x="250" y="112" fill="#8b949e" font-size="14">Public repos</text>
+  </g>
+  <g class="fade" style="animation-delay:0.30s">
+    <text x="40" y="162" fill="#58a6ff" font-size="30" font-weight="700" font-family="'Fira Code', Consolas, monospace">3</text>
+    <text x="40" y="186" fill="#8b949e" font-size="14">Stars earned</text>
+  </g>
+  <g class="fade" style="animation-delay:0.45s">
+    <text x="250" y="162" fill="#58a6ff" font-size="30" font-weight="700" font-family="'Fira Code', Consolas, monospace">0</text>
+    <text x="250" y="186" fill="#8b949e" font-size="14">Followers</text>
+  </g>
+  <clipPath id="barclip"><rect x="520" y="70" width="0" height="12" rx="6">
+    <animate attributeName="width" from="0" to="440" dur="1.2s" begin="0.2s" fill="freeze"/></rect></clipPath>
+  <rect x="520" y="70" width="440" height="12" rx="6" fill="#21262d"/>
+  <g clip-path="url(#barclip)"><g transform="translate(0 70)">
+    <rect x="520.0" y="0" width="155.4" height="12" fill="#3572A5"/>
+    <rect x="675.4" y="0" width="131.6" height="12" fill="#3178c6"/>
+    <rect x="807.0" y="0" width="67.0" height="12" fill="#f1e05a"/>
+    <rect x="874.0" y="0" width="50.2" height="12" fill="#e34c26"/>
+    <rect x="924.2" y="0" width="33.3" height="12" fill="#663399"/>
+    <rect x="957.4" y="0" width="2.6" height="12" fill="#f34b7d"/>
+  </g></g>
+  <g class="fade" style="animation-delay:0.60s">
+    <circle cx="526" cy="115" r="6" fill="#3572A5"/>
+    <text x="540" y="120" fill="#e6edf3" font-size="14">Python <tspan fill="#8b949e">35.3%</tspan></text>
+  </g>
+  <g class="fade" style="animation-delay:0.70s">
+    <circle cx="746" cy="115" r="6" fill="#3178c6"/>
+    <text x="760" y="120" fill="#e6edf3" font-size="14">TypeScript <tspan fill="#8b949e">29.9%</tspan></text>
+  </g>
+  <g class="fade" style="animation-delay:0.80s">
+    <circle cx="526" cy="145" r="6" fill="#f1e05a"/>
+    <text x="540" y="150" fill="#e6edf3" font-size="14">JavaScript <tspan fill="#8b949e">15.2%</tspan></text>
+  </g>
+  <g class="fade" style="animation-delay:0.90s">
+    <circle cx="746" cy="145" r="6" fill="#e34c26"/>
+    <text x="760" y="150" fill="#e6edf3" font-size="14">HTML <tspan fill="#8b949e">11.4%</tspan></text>
+  </g>
+  <g class="fade" style="animation-delay:1.00s">
+    <circle cx="526" cy="175" r="6" fill="#663399"/>
+    <text x="540" y="180" fill="#e6edf3" font-size="14">CSS <tspan fill="#8b949e">7.6%</tspan></text>
+  </g>
+  <g class="fade" style="animation-delay:1.10s">
+    <circle cx="746" cy="175" r="6" fill="#f34b7d"/>
+    <text x="760" y="180" fill="#e6edf3" font-size="14">C++ <tspan fill="#8b949e">0.6%</tspan></text>
+  </g>
+
+</svg>
