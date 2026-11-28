@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="124" viewBox="0 0 500 124">
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .fade { opacity: 0; animation: fade .6s ease-out forwards; }
+    @keyframes fade { to { opacity: 1 } }
+    
+  </style>
+  <rect x="0.5" y="0.5" width="499" height="123" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <g class="fade">
+  <path transform="translate(24 24)" fill="#8b949e" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/>
+  <text x="48" y="37" fill="#58a6ff" font-size="17" font-weight="700">agentsense</text>
+  <text x="24" y="66" fill="#8b949e" font-size="14">A local-first desktop app for running CLI coding agents side</text>
+  <text x="24" y="86" fill="#8b949e" font-size="14">by side, with multi-pane terminals, isolated Git worktrees,…</text>
+  <circle cx="30" cy="99" r="6" fill="#f1e05a"/>
+  <text x="42" y="104" fill="#8b949e" font-size="13">JavaScript</text>
+  <text x="134" y="104" fill="#8b949e" font-size="13">★ 1</text>
+  <text x="194" y="104" fill="#8b949e" font-size="13">⑂ 0</text>
+  </g>
+</svg>
